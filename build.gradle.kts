@@ -30,11 +30,13 @@ dependencies {
 	runtimeOnly("org.postgresql:r2dbc-postgresql")
 	runtimeOnly("org.flywaydb:flyway-core")
 	runtimeOnly("org.springframework:spring-jdbc")
+	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 	testImplementation("org.testcontainers:junit-jupiter")
 	testImplementation("org.testcontainers:postgresql")
 	testImplementation("org.testcontainers:r2dbc")
+	testImplementation("com.squareup.okhttp3:mockwebserver")
 }
 
 dependencyManagement {
